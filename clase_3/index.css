@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url(./manzana.jpg);
+    background-size:cover;
+}
+
+:root{
+    --primary-color: #ffffff;
+    --title-color-asirrin: #aaaa00;
+}
+
+header{
+    background-color: #000000;
+    padding: 15px;
+}
+
+header ul li{
+    display: inline;
+    padding: 15px 10px;
+    vertical-align:top;
+    font-weight:900;
+    color: var(--primary-color);
+}
+
+header ul li:hover,
+header ul li:hover a{
+    cursor:pointer;
+    background-color: var(--primary-color);
+    color:#000000;  
+}
+
+header ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    user-select: none;
+    vertical-align:top
+}
+
+.arti{
+    text-align:center;
+    background-color:#440000;
+    width:450px;
+    border: 1px #aa0 solid;
+    border-radius: 60px;
+    padding: 50px 0px;
+    margin-left: auto;
+    margin-top:15%;    
+}
+
+.arti h1{
+    font-size:90px;
+    color: var(--title-color-asirrin);
+    font-family:monospace;
+    text-align: center;
+    letter-spacing: 10px;
+    user-select: none;
+}
+
+.arti h2{
+    text-align:center;
+    padding: 12px;
+    color: var(--primary-color);
+    display:inline;
+}
+
+.arti h2:hover{
+    cursor: pointer;
+}
+
+.arti ul{margin:10px 0;}
+
+.arti ul li{
+    display: inline;
+    font-weight:600;
+}
+
+.arti ul li a:hover{
+    color:#c0c0c0;
+}
+
+.arti ul li a{
+    text-decoration: none;
+    color:var(--primary-color);
+}
+
+.arti table tr td{
+    display:block;
+    padding:6px;
+}
+
+.arti table tr td input{
+    background-color: #060;
+}
+
+.arti label{
+    color: #c00;
+    font-weight:540;
+}
+
+footer{
+    background-color: #000000;
+    margin-top:125px;
+}
+
+footer #rojo{
+    background-color:#400000;
+    padding:15px;
+}
+
+footer div h3{
+    color: var(--primary-color)
+}
+
+footer div ul li{
+    margin-left: 9px;
+    list-style: none;
+}
+
+footer div ul li:first-child{
+    margin-top: 5px;
+}
+
+footer div ul li a{
+    text-decoration:none;
+    color:var(--primary-color);
+    font-weight:600;
+}
+footer hr{
+    color: #480000;
+}
+
+footer #rojo-claro{
+    background-color:#5f0000;
+    padding:8px 0;
+    text-align:center;
+}
+footer div p{
+    color:var(--primary-color)
+}
