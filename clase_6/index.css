@@ -1,0 +1,37 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color:aqua;
+}
+
+header #logo img{
+    width: 50px;
+}
+
+main{
+    background-color:cornflowerblue;
+    display:flex;
+}
+
+main aside{
+    background-color:darkblue;
+}
+
+main aside #costado-logo img{
+    width:225px;
+}
+
+main #intro-logo img{
+    width:48%;
+}
+
+
+
+footer{
+    background-color:darkturquoise;
+    display:flex;
+}
