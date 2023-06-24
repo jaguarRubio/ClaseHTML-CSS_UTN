@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matías Ezequiel Sallago">
+    <meta name="description" content="form of activity in html">
+    <meta name="Robots" content="noRobots">
+    <title>Clase 2</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body style="background-color:#708090">
+    <div>
+        <img src="./15010924800.jpg" alt="libro-y-birome" style="border:1px solid #000000">
+        <h1 style="display:inline; font-family:sans-serif; border:1px solid #112211; border-radius: 15px; background-color: #aaaa00; padding:3px">Formulario</h1>
+    </div>
+    <div>
+        <table style="border:1px solid #000">
+            <tr>
+                <td>
+                    <h2>Etimología</h2>
+                    <p>Formulario/ria <br>Del latín tardio <i>formularius</i> 'relativo a las fórmulas jurídicas'</p>
+
+                    <h2>Descripción</h2>
+
+                    <p>Adj.<sup><small>1</small></sup> Perteneciente o relativo a las fórmulas</p>
+                    <p>Adj. Dicho de una cosa: Que se hace por fórmula, cubriendo las apariencias.</p>
+                    <p>m.<sup><small>2</small></sup> Impreso con espacios en blanco.</p>
+                    <p>m. Libro o escrito en que se contienen fórmulas que se han de observar para la petición, expedición, o ejecución de algo.</p>
+                    <span>Real Academia Española &copy; Todos los derechos reservados</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>Formulario decorado</h4>
+                    <form method="get" action="">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido" value="el señor de los anillos" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Mail</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <div>
+                            <label for="pais">País</label>
+                            <select name="pais" id="pais">
+                                <option name="pais" value="a" selected>Argentina</option>
+                                <option name="pais" value="o">Otro</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="color">Grupo</label>
+                            <input type="color" name="color" id="color">
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h3>Guia</h3>
+        <p>1: Adjetivo.</p>
+        <p>2: Nombre masculino.</p>
+    </div>
+</body>
+</html>
