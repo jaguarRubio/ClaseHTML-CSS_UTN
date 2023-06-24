@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#708090;
+}
+
+aside{
+    background-color: black;
+    width:29%;
+    float:left;
+    height:110vh;
+}
+aside .datos-personales img{
+    margin: 0 auto;
+    width:100%;
+    border-radius: 50%;
+}
+aside p,
+aside h2{
+    color: white;
+}
+
+aside h2{
+    font-size: 40px;
+}
+
+aside hr{
+    margin: 0 auto;
+    width:95%;
+}
+
+aside div{
+    text-align:center;
+}
+
+aside dt{
+    margin-top:1rem;
+}
+
+aside dt,
+aside dl,
+aside dd{
+    color:#fff;
+}
+
+aside div .barra{
+    height:20px;
+    width:90%;
+    margin:0 auto;
+    background-color: #ff0000;
+}
+aside div .barra .en{
+    width:94%;
+    height:20px;
+    background-color: #4b0082;
+    z-index:2;
+}
+aside div .barra .es{
+    width:100%;
+    height:20px;
+    background-color:#4b0082;
+    z-index:2;
+}
+
+aside .habilidades-b{
+    margin-top:4rem;
+}
+
+aside .posdata{
+    width:95%;
+    margin-top:3rem;
+}
+
+header h2{font-family:'Times New Roman', Times, serif}
+
+header ul{
+    background-color:#008585;
+    width:130px;
+    display:inline-block;
+    padding:0.7rem;
+    border-radius:0.5rem;
+}
+
+header ul li,
+header ul li a{
+    display:block;
+}
+
+header a{
+    color:azure;
+    margin-left:1rem;
+}
+
+main{
+    width:60%;
+    float:left;
+}
+
+main h2, main h3{
+    margin-left:0.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main p{font-family:'Courier New', Courier, monospace}
+
+main .datos-personales p{
+    margin-left:1rem;
+}
+
+main ol{
+    margin-left: 1.2rem;
+}
+main ol li{
+    font-family:'Times New Roman', Times, serif
+}
+main > p{
+    margin-left:1rem;
+}
+main dl{
+    margin-left:1rem;
+}
+
+main dl dt{
+    margin-left:1rem;
+    margin-top:0.5rem;
+}
+
+main dl dd{
+    margin-left:2.6rem;
+}
+
