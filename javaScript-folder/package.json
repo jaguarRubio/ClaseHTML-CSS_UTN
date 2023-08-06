@@ -1,0 +1,25 @@
+{
+  "name": "javascript-folder",
+  "version": "1.0.0",
+  "description": "first-time",
+  "main": "act-lab_10-obj.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaguarRubio/ClaseHTML-CSS_UTN.git"
+  },
+  "keywords": [
+    "UTN"
+  ],
+  "author": "Ma'tias Ezekiel Sayago",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jaguarRubio/ClaseHTML-CSS_UTN/issues"
+  },
+  "homepage": "https://github.com/jaguarRubio/ClaseHTML-CSS_UTN#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
