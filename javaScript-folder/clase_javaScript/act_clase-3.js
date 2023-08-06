@@ -1,6 +1,10 @@
 /** DADA UNA ACCION POR EL USUARIO MOSTRAR POR PANTALLA LA TABLA DE MULTIPLICAR
  * SUMAR, DIVIDIR Y RESTAR, SEGUN EL VALOR QUE INGRESE EL USUARIO
  */
+const prompt = require("prompt-sync")(({sigint:true}));
+
+
+
 console.log('Calculadora aritmética');
 
 function Inicio(){
@@ -16,42 +20,45 @@ function Inicio(){
         }
         while(!flag){
             console.log('error');
-            Inicio();
+            op = parseInt(prompt('Ingrese número:'));
+            comprob(op);
         }}
-        comprob();
+        comprob(op);
 
-        n0 = parseInt(prompt('Ingrese número:'));
-        n1 = parseInt(prompt('Ingrese número:'));
-        comprobII = function(n0, n1){
-            if((!isNaN(n0) && Number.isInteger(n0)) && (!isNaN(n1) && Number.isInteger(n1))){
+        n0 = parseInt(prompt('Ingrese número A:'));
+        n1 = parseInt(prompt('Ingrese número B:'));
+        comprobII = function(N0, N1){
+            if((!isNaN(N0) && Number.isInteger(N0)) && (!isNaN(N1) && Number.isInteger(N1))){
                 flag = true;
             }else{
                 flag = false;
             }
             while(!flag){
                 console.log('error');
-                Inicio();
+                n0 = parseInt(prompt('Ingrese número A:'));
+                n1 = parseInt(prompt('Ingrese número B:'));
+                comprobII(n0, n1);
             }}
-        comprobII();
-        aritm = function(n){
-            switch (n) {
+        comprobII(n0, n1);
+        aritm = function(o, n, nn){
+            switch (o) {
                 case 1:
-                  r = n0 + n1
+                  r = n + nn
                   break;
                 case 2:
-                  r = n0 - n1
+                  r = n - nn
                   break;
                 // ...
                 case 3:
-                  r = n0 * n1
+                  r = n * nn
                   break;
                 default:
-                  r = n0 / n1
+                  r = n / nn
                   break;
               }
               return r;
         }
-        aritm();
+        return aritm(op, n0, n1);
 }
 
-Inicio();
+console.log(Inicio());
