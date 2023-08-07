@@ -1,10 +1,8 @@
 /**  ACTIVIDAD AGREGAR 10 OBJETOS PERSONAS EN AL ARRAY CON DATA DIFERENTE...
- * 1.-FILTRADO POR NOMBRE (COINCIDA)(SOLICITAR AL USUARIO EL NOMBRE O PALABRA A BUSCAR)
- * 2.- MOSTRAR EL PROMEDIO DE EDADES
  */
 const prompt = require("../node_modules/prompt-sync")(({sigint:true}));
 
-var lastName = "Mendoza C&C Renegade X";
+var lastName = "C&C renegade X Carlos mendoza";
 
 const person = {
     firstName:"PEDRO",

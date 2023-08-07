@@ -1,8 +1,10 @@
-const prompt = require("../node_modules/prompt-sync")(({sigint:true}))
-
-/**1.-FILTRADO POR NOMBRE (COINCIDA)(SOLICITAR AL USUARIO EL NOMBRE O PALABRA A BUSCAR)
+/**  ACTIVIDAD AGREGAR 10 OBJETOS PERSONAS EN AL ARRAY CON DATA DIFERENTE...
+ * 1.-FILTRADO POR NOMBRE (COINCIDA)(SOLICITAR AL USUARIO EL NOMBRE O PALABRA A BUSCAR)
  * 2.- MOSTRAR EL PROMEDIO DE EDADES
  */
+const prompt = require("../node_modules/prompt-sync")(({sigint:true}))
+
+
 
 let caja = [];
 
@@ -67,22 +69,11 @@ console.table(searchResult);
 
 console.log('age average')
 
-let ageAveragge = caja.map((elm) => {
-    ag =  2023 - elm.birthday;
-    // suma += ag;
-    return ag;
-})
-
 suma = 0;
 
-ageAveragge = ageAveragge.forEach(elm => {
-    suma += elm;
-    return suma
-})
+for(let x=0; x < caja.length; x++){
+    suma += 2023 - caja[x].birthday;
+}
+ageAverage = suma / caja.length; 
 
-console.log(`is ${ageAveragge}`)
-
-// average = suma / caja.birthday.length()
-
-// console.log(`is ${average}`)
-
+console.log(`is ${ageAverage}`)
