@@ -42,25 +42,18 @@ let mapa = caja.map((elm) => {
         nombre: elm.firstN + ' '+ elm.lastN
     };
     return nombre;
-})
+})                      //[nombre] (nombre es objeto con atributo nombre)
 
 console.table(mapa);
-
-mapa = mapa.map((elm) => {
-    nombre = {
-        nombre: elm.nombre.toLowerCase()
-    }
-    return nombre
-})
-
 //console.table(mapa)
 
 input = prompt('search:');
-input = input.toLowerCase();
 //console.log(input)
 
 let searchResult = mapa.filter((elm) => {
-    return elm.nombre.includes(input)
+    input = input.toLowerCase();
+    nombreCompleto=elm.nombre.toLowerCase();
+    return nombreCompleto.includes(input)
 });
 
 //console.table(caja);
@@ -74,6 +67,30 @@ suma = 0;
 for(let x=0; x < caja.length; x++){
     suma += 2023 - caja[x].birthday;
 }
-ageAverage = suma / caja.length; 
+ageAverage = suma / caja.length; ''
 
 console.log(`is ${ageAverage}`)
+
+
+function funPromed(){
+    sumua=0;
+    caja.forEach((elm) => {
+        sumua += 2023-elm.birthday;
+    })
+    promedio = sumua / caja.length
+    return promedio
+}
+console.log(funPromed());
+
+
+const reduc = caja.reduce((acum, elm)=>{
+    return acum + (2023-elm.birthday)
+},0);
+promedio = reduc / caja.length
+
+console.log(promedio)
+
+mi_nombre = "Matias Sayago"
+mi_nombre = mi_nombre.replace("i","í")
+mi_nombre_con_diacriticos = mi_nombre.replace("Sa","Sá")
+console.log(mi_nombre_con_diacriticos);
