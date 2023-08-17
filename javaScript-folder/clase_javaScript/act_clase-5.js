@@ -9,11 +9,8 @@ var dataInput = () => {
     let address = document.getElementById("address");
     let status = document.getElementById("status");
     let dni = document.getElementById("dni");
-    if(DNI_detector){
+    if(DNI_detector()){
         console.log("Error, DNI repeated")
-    }
-    else{
-        console.log("esta bien")
     }
 
     subject(firstN.value, lastN.value, birthD.value, address.value, status.value, dni.value)
