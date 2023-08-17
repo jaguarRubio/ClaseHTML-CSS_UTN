@@ -9,6 +9,7 @@
  * 1*10=10
  */
 /**TODOS LOS DEBERAS MOSTRAR POR LA CONSOLA */
+// Power Point debajo de las consignas respondidas arriba
 const prompt = require("prompt-sync")(({sigint:true}));
 
 
@@ -77,3 +78,22 @@ var A = parseInt(prompt("N:"));
 for(x=0; x<=10; x++){
     console.log(`${A} × ${x} = ${A*x}`)
 }
+
+//Power
+/*1- Ingresar nombre por prompt
+2- Comparar el nombre ingresado con tu nombre
+3- Si es igual a tu nombre mostrar por consola un mensaje de éxito, caso contrario mostrar un mensaje de error.*/
+
+//1.
+nom = prompt("input name: ");
+console.log(nom);
+
+//2.
+nom = prompt("input name: ");
+selfName=["Matías", "Ma'tias", "Matias"]
+compar = nom.toLowerCase() == selfName[0].toLowerCase() ? true :
+nom.toLowerCase() == selfName[1].toLowerCase() ? true : 
+nom.toLowerCase() == selfName[2].toLowerCase() ? true : false;
+
+//3.
+console.log(`same name like author?: ${compar}`)
